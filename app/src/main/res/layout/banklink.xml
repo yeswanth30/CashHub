@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Skip Text -->
+    <TextView
+        android:id="@+id/skipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Bank Account TextView -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank Account"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Search EditText -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+android:padding="10dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:drawablePadding="8dp"
+        android:hint="Search"
+        android:inputType="text" />
+    <RelativeLayout
+        android:id="@+id/firstBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchEditText"
+        android:layout_margin="18dp">
+
+        <ImageView
+            android:id="@+id/bankIcon1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/axisbank" />
+
+        <TextView
+            android:id="@+id/bankName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@id/bankIcon1"
+            android:text="AXIS Bank"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/maskedNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bankName1"
+            android:layout_toEndOf="@id/bankIcon1"
+            android:layout_marginStart="16dp"
+            android:text="*****3456"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/addButton1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/plus"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:background="@drawable/round_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstBank"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/bankIcon2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/sbi" />
+
+        <TextView
+            android:id="@+id/bankName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/bankIcon2"
+            android:text="SBI Bank "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/maskedNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bankName2"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/bankIcon2"
+            android:text="*****3456"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addButton2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_button"
+            android:padding="12dp"
+            android:src="@drawable/plus" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/thirdBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondBank"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/bankIcon3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/hdfc" />
+
+        <TextView
+            android:id="@+id/bankName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon3"
+            android:layout_marginStart="16dp"
+            android:text="HDFC Bnak"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/maskedNumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bankName3"
+            android:layout_toEndOf="@id/bankIcon3"
+            android:layout_marginStart="16dp"
+            android:text="*****3456"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/addButton3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/plus"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:background="@drawable/round_button" />
+    </RelativeLayout>
+
+    <!-- Fourth Bank -->
+
+    <!-- Fifth Bank -->
+    <RelativeLayout
+        android:id="@+id/fourthBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thirdBank"
+        android:layout_margin="16dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/bankIcon4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/citi" />
+
+        <TextView
+            android:id="@+id/bankName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/bankIcon4"
+            android:text=" CITI Bank"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/maskedNumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bankName4"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/bankIcon4"
+            android:text="*****3456"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/addButton4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_button"
+            android:padding="12dp"
+            android:src="@drawable/plus" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fifthBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fourthBank"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/bankIcon5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/braclays" />
+
+        <TextView
+            android:id="@+id/bankName5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon5"
+            android:layout_marginStart="16dp"
+            android:text="BARCLAYS Bank "
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/maskedNumber5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bankName5"
+            android:layout_toEndOf="@id/bankIcon5"
+            android:layout_marginStart="16dp"
+            android:text="*****3456"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/addButton5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/plus"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:background="@drawable/round_button" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_below="@id/fifthBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See All"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="18dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

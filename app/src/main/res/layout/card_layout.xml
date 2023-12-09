@@ -1,0 +1,190 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/bankIcon"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+
+
+        android:src="@drawable/axisbank" />
+
+    <TextView
+        android:id="@+id/bankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/bankIcon"
+    android:textSize="18sp"
+    android:textColor="@color/white"
+    android:text=" AXIS Bank"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/maskedNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bankName"
+        android:textSize="10sp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/white"
+        android:text="******1234" />
+
+
+    <TextView
+        android:id="@+id/balance34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maskedNumber"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:text="Balance"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/balanceamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance34"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="0dp"
+        android:text="Rs.28990"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balanceamount"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="01/26"
+        />
+
+    <ImageView
+        android:id="@+id/mastercard"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/balanceamount"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginStart="127dp"
+
+        android:layout_marginTop="138dp"
+        android:layout_toEndOf="@id/date"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/matercard" />
+</RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:background="@drawable/card_background">-->
+<!--    <ImageView-->
+<!--        android:id="@+id/bankIcon2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="29dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:backgroundTint="#6f2DBD"-->
+
+<!--        android:src="@drawable/axisbank" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/bankName2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toEndOf="@id/bankIcon2"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text=" AXIS Bank"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/maskedNumber2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/bankName2"-->
+<!--        android:textSize="10sp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="******1234" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/balance2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/maskedNumber2"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="Balance"-->
+<!--        android:layout_marginLeft="10dp"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/balanceamount2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/balance2"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:text="Rs.28990"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:textStyle="bold"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/date2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/balanceamount2"-->
+<!--        android:textSize="12dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="01/26"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/mastercard2"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="29dp"-->
+<!--        android:layout_below="@id/balanceamount2"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerVertical="true"-->
+
+<!--        android:layout_marginStart="127dp"-->
+
+<!--        android:layout_marginTop="138dp"-->
+<!--        android:layout_toEndOf="@id/date2"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:src="@drawable/matercard" />-->
+<!--    </RelativeLayout>-->
+
+</LinearLayout>

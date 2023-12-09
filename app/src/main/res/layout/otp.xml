@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel"
+
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tab_image"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Tab Image"
+            android:src="@drawable/tabimage" />
+
+        <TextView
+            android:id="@+id/tab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="paiza"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tab_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pe"
+            android:textStyle="bold"
+
+            android:textSize="30sp"
+            android:textColor="#7BBD2D"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Bank Details"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewHeading"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:id="@+id/textViewAccountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Account Number"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+android:textColor="#A3A3A3"
+            android:maxLines="1"
+android:padding="5dp"
+            android:paddingStart="15dp"
+
+            android:background="@drawable/edit_text_border"/>
+        <TextView
+            android:id="@+id/textViewBankname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Bank Name"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/bankNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:spinnerMode="dropdown"
+            android:textColor="#A3A3A3"
+            android:padding="7dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/textViewBankname2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Enter Bank Account Type"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/accountTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:spinnerMode="dropdown"
+            android:textColor="#A3A3A3"
+            android:padding="7dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/textViewBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Balance"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:textColor="#A3A3A3"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+
+            android:background="@drawable/edit_text_border"/>
+        <TextView
+            android:id="@+id/ifc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Ifc Code"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/ifc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:textColor="#A3A3A3"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+
+            android:background="@drawable/edit_text_border"/>
+<!--        <TextView-->
+<!--            android:id="@+id/upi1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Enter Upi id"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:ignore="DuplicateIds" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/upi"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="#A3A3A3"-->
+<!--            android:maxLines="1"-->
+<!--            android:padding="5dp"-->
+<!--            android:paddingStart="15dp"-->
+
+<!--            android:background="@drawable/edit_text_border"/>-->
+
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:backgroundTint="#6F2DBD"
+            android:text="Continue" />
+    </LinearLayout>
+
+</RelativeLayout>
+

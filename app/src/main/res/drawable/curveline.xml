@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main shape with curved bottom -->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="110dp" /> <!-- No corner radius -->
+        </shape>
+    </item>
+
+    <!-- Line at the bottom with a curved edge -->
+    <item >
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners android:radius="1000dp" /> <!-- Adjust the radius for the curve -->
+        </shape>
+    </item>
+</layer-list>

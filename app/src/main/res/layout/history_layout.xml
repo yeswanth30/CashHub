@@ -1,0 +1,109 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background"
+        tools:ignore="Suspicious0dp">
+
+        <ImageView
+            android:id="@+id/bankIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/histroyuber"
+           android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon"
+            android:layout_marginStart="8dp"
+            android:text="Paid for order to Uber"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bankName"
+            android:layout_toEndOf="@id/bankIcon"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="21/06/2022"
+            android:textSize="10sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:text="$100.00"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background"
+        tools:ignore="Suspicious0dp">
+
+        <ImageView
+            android:id="@+id/bankIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/histroyuber"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/bankName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon2"
+            android:layout_marginStart="8dp"
+            android:text="Paid for order to Uber"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bankName2"
+            android:layout_toEndOf="@id/bankIcon2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="21/06/2022"
+            android:textSize="10sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/amount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:text="$100.00"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+
+    <!-- Your RelativeLayout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/picboy"
+            android:background="@drawable/button_background"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imageView"
+            android:layout_height="wrap_content"
+            android:text="ChristophervMiles"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_marginStart="12dp"
+            android:text="chris@gmail.com" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_marginStart="12dp"
+            android:text="8431346976" />
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/card_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/bankIcon3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/baseline_person_24"
+                />
+
+            <TextView
+                android:id="@+id/bankName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/bankIcon3"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Edit Profile"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/bankIcon4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/baseline_settings_24"
+                />
+
+            <TextView
+                android:id="@+id/bankName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/bankIcon4"
+                android:layout_marginStart="8dp"
+                android:text="Account Setting "
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/bankIcon5"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_notifications_241"
+                />
+
+            <TextView
+                android:id="@+id/bankName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/bankIcon5"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="8dp"
+                android:text="Notifications"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/bankIcon6"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/baseline_payment_24"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:id="@+id/bankName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/bankIcon6"
+                android:layout_marginStart="8dp"
+                android:text="Payment"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/bankIcon7"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_brightness_high_24" />
+
+            <TextView
+                android:id="@+id/bankName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/bankIcon7"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"
+                android:text="Apperance"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/bankIcon8"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_lock_24" />
+
+        <TextView
+            android:id="@+id/bankName8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon8"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:text="Change password"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/bankIcon9"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/baseline_help_24" />
+
+        <TextView
+            android:id="@+id/bankName9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon9"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:text="Help"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/bankIcon10"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/baseline_group_add_24" />
+
+        <TextView
+            android:id="@+id/bankName10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon10"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:text="Invite Friends"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/bankIcon11"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/baseline_logout_24"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/bankName11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bankIcon11"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:text="Signout"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+       </LinearLayout>
+</LinearLayout>
