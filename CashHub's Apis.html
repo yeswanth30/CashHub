@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashHub API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CashHub API Documentation</h1>
+
+<!-- User Credential APIs -->
+<h2>1. User Credential APIs:</h2>
+<ul>
+    <li><code>/signin</code> - (POST) Requires Name, Number, Email, Password</li>
+    <li><code>/login</code> - (POST) Requires Email and Password  ## Gives you all the DATA of the particular User</li>
+</ul>
+
+<!-- User Account APIs -->
+<h2>2. User Account APIs:</h2>
+<ul>
+    <li><code>/addaccount</code> - (POST) Requires Account_number, Bank_name, IFSC_Code, Account_type, Balance, UPI</li>
+    <li><code>/getaccdetail/id</code> - (GET) Gives you all account details of the particular User</li>
+    <li><code>/addhistory</code> - (POST) Requires Reciever_name, Amount</li>
+    <li><code>/gethistory/id</code> - (GET) Gives you all of the particular User's History</li>
+</ul>
+
+</body>
+</html>
